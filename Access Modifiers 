@@ -1,0 +1,22 @@
+//Access Modifiers 
+           //topic-08
+           
+class Marks{
+public:
+
+float getMarks(){
+return marks;
+}
+void setMarks(float m){
+marks=m;
+}
+private:
+float marks;
+};
+int main(){
+Marks s1; 
+s1.setMarks(95.5);
+cout <<s1.getMarks()<< endl;
+s1.setMarks(98.5);
+cout <<s1.getMarks()<< endl;
+}
