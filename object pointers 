@@ -1,0 +1,45 @@
+OBJECT POINTERS 
+        //TOPIC-05
+        
+class Cricketers{
+public:
+string name;
+int runs;
+float avg;
+
+Cricketers(string name,int runs,float avg){
+this->name=name;
+this->runs=runs;    //this use to differences 
+this->avg=avg;  
+}
+void print(int runs){
+cout <<this->name<<" "<<this->runs<<" "<<this->avg<< endl;
+cout << runs << endl;
+}
+int matches(){
+return runs/avg;
+}
+};        
+void change(Cricketers*c) {
+c->avg=50.1;    // mtlb (*c).avg=50.1;
+}
+
+int main(){
+Cricketers c1("Virat kholi",25000,90.8);
+Cricketers c2(" Rohit sharma",15000,80.8);
+
+Cricketers*p1=&c1;    //total address 
+cout << (*p1).runs<< endl;    //print run
+//(*p1).avg=77.5;      ⬆️   //change 
+    //or
+cout << c1.avg << endl;     
+change(&c1);
+cout << c1.avg << endl;
+
+
+//Dynamic allocation 
+int*ptr=new int(500);
+cout <<*ptr<< endl;      //imp.
+
+// just address not name
+}
