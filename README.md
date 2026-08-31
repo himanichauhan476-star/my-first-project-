@@ -1,1 +1,1 @@
-# my-first-project-
+This repository contains a comprehensive collection of C++ programs implementing the core concepts of Object-Oriented Programming (OOPs). It serves as a practical guide to understanding fundamental pillars like Classes and Objects, Encapsulation (binding data and code), Inheritance (reusability), Polymorphism (compile-time and runtime), and Abstraction (hiding complexity). Designed for beginners and quick revision, each code snippet focuses on clean, readable, and well-commented implementations.
