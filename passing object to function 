@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+class Cars{
+public:   //:
+
+string brand;
+int price;
+int seat;
+string type;
+}; 
+
+void print(Cars c){
+cout<<c.brand<<" "<<c.price<<" "<<c.seat<<" "<<c.type<<endl;
+} 
+
+void change(Cars& c){   //pass by reference 
+c.brand="Audi A8";      //(Cars c)pass by value
+}
+        
+int main(){
+
+Cars c1;
+c1.brand="BMW";
+c1.price=30000000;
+c1.seat=8;
+c1.type="SUV";
+
+Cars c2;
+c2.brand="scorpio";
+c2.price=25000000;
+c2.seat=4;
+c2.type="SUV";
+
+print(c1);
+change(c1);
+print(c1);
+print(c2);
+}
